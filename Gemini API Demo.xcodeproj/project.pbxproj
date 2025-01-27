@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		EB8C86BD2D3DA1560009002A /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = EB8C86BC2D3DA1560009002A /* GoogleGenerativeAI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		EB8C86742D3B14FE0009002A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB8C86BD2D3DA1560009002A /* GoogleGenerativeAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 				EB8C86652D3B14FC0009002A /* Gemini API Demo */,
 				EB8C86762D3B14FE0009002A /* Gemini API DemoTests */,
 				EB8C86802D3B14FE0009002A /* Gemini API DemoUITests */,
+				EB8C86BB2D3DA1560009002A /* Frameworks */,
 				EB8C86642D3B14FC0009002A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +96,13 @@
 				EB8C867D2D3B14FE0009002A /* Gemini API DemoUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EB8C86BB2D3DA1560009002A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +125,7 @@
 			);
 			name = "Gemini API Demo";
 			packageProductDependencies = (
+				EB8C86BC2D3DA1560009002A /* GoogleGenerativeAI */,
 			);
 			productName = "Gemini API Demo";
 			productReference = EB8C86632D3B14FC0009002A /* Gemini API Demo.app */;
@@ -195,6 +209,9 @@
 			);
 			mainGroup = EB8C865A2D3B14FC0009002A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				EB8C86A72D3B1F9B0009002A /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = EB8C86642D3B14FC0009002A /* Products */;
 			projectDirPath = "";
@@ -552,6 +569,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EB8C86A72D3B1F9B0009002A /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google-gemini/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EB8C86BC2D3DA1560009002A /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB8C86A72D3B1F9B0009002A /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EB8C865B2D3B14FC0009002A /* Project object */;
 }
